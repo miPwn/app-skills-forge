@@ -1,17 +1,25 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Trophy } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ExpertPanel from '../components/legends/ExpertPanel';
+import { useAdventurers } from '../contexts/AdventurerContext';
+import ErrorBoundary from '../components/shared/ErrorBoundary';
 
-const HallOfLegendsPage = ({ adventurers }) => {
+/**
+ * Hall of Legends page component
+ */
+const HallOfLegendsPage = () => {
+  const { adventurers } = useAdventurers();
   const [selectedCategory, setSelectedCategory] = useState('Fundamental');
   
   // Get unique categories from the first real adventurer
-  const firstRealAdventurer = adventurers.find(
-    adv => adv.role !== 'Guild' && adv.role !== 'Quest Board'
-  );
-  
-  const categories = firstRealAdventurer ? Object.keys(firstRealAdventurer.skills) : [];
+  const categories = useMemo(() => {
+    const firstRealAdventurer = adventurers.find(
+      adv => adv.role !== 'Guild' && adv.role !== 'Quest Board'
+    );
+    
+    return firstRealAdventurer ? Object.keys(firstRealAdventurer.skills) : [];
+  }, [adventurers]);
   
   return (
     <div>
@@ -31,33 +39,34 @@ const HallOfLegendsPage = ({ adventurers }) => {
         </p>
       </motion.div>
       
-      <div className="mb-8">
-        <h2 className="text-2xl font-medieval text-center mb-6 flex items-center justify-center">
-          <Trophy size={24} className="text-yellow-400 mr-2" />
-          <span>Experts & Gurus</span>
-        </h2>
-        
-        <div className="mb-6 flex flex-wrap justify-center gap-2">
-          {categories.map(category => (
-            <button
-              key={category}
-              onClick={() => setSelectedCategory(category)}
-              className={`px-4 py-2 rounded-md text-sm ${
-                selectedCategory === category
-                  ? 'bg-secondary-600 text-white'
-                  : 'bg-dark-700 text-dark-300 hover:bg-dark-600'
-              } transition-colors`}
-            >
-              {category}
-            </button>
-          ))}
+      <ErrorBoundary>
+        <div className="mb-8">
+          <h2 className="text-2xl font-medieval text-center mb-6 flex items-center justify-center">
+            <Trophy size={24} className="text-yellow-400 mr-2" />
+            <span>Experts & Gurus</span>
+          </h2>
+          
+          <div className="mb-6 flex flex-wrap justify-center gap-2">
+            {categories.map(category => (
+              <button
+                key={category}
+                onClick={() => setSelectedCategory(category)}
+                className={`px-4 py-2 rounded-md text-sm ${
+                  selectedCategory === category
+                    ? 'bg-secondary-600 text-white'
+                    : 'bg-dark-700 text-dark-300 hover:bg-dark-600'
+                } transition-colors`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
+          
+          <ExpertPanel 
+            category={selectedCategory}
+          />
         </div>
-        
-        <ExpertPanel 
-          adventurers={adventurers} 
-          category={selectedCategory}
-        />
-      </div>
+      </ErrorBoundary>
       
       <motion.div
         className="mt-16 text-center"

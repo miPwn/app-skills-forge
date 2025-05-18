@@ -1,18 +1,57 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
-import { ArrowLeft, Star, Edit, Award, BadgeCheck } from 'lucide-react';
+import { ArrowLeft, Star, Edit, Award, Loader } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { createAvatarUrl, getRankName, getClassDescription } from '../../utils/helpers';
-import SkillTree from './SkillTree';
+import { getRankName } from '../../utils/rankHelpers';
+import { getClassDescription } from '../../utils/loreHelpers';
 import { CLASS_EMBLEMS } from '../../utils/constants';
+import { useAdventurers } from '../../contexts/AdventurerContext';
+import SkillTree from './SkillTree';
+import Avatar from '../shared/Avatar';
+import ProgressBar from '../shared/ProgressBar';
+import ErrorBoundary from '../shared/ErrorBoundary';
 
-const AdventurerCard = ({ adventurers }) => {
+/**
+ * Detailed adventurer profile card component
+ */
+const AdventurerCard = ({ adventurerId }) => {
   const { id } = useParams();
   const navigate = useNavigate();
   const [activeTab, setActiveTab] = useState('skills');
+  const { adventurers, loading, findAdventurerById, findAdventurer } = useAdventurers();
   
-  // Find the adventurer in our data
-  const adventurer = adventurers.find(a => a.name === id);
+  // Use the provided adventurerId or the one from URL params
+  const idToUse = adventurerId || id;
+  
+  // Find the adventurer by ID or name
+  const adventurerById = findAdventurerById(idToUse);
+  const adventurerByName = findAdventurer(idToUse);
+  const adventurer = adventurerById || adventurerByName;
+  
+  // Debug
+  console.log('ID from params:', id);
+  console.log('Adventurer by ID:', adventurerById);
+  console.log('Adventurer by name:', adventurerByName);
+  console.log('Selected adventurer:', adventurer);
+  console.log('All adventurers:', adventurers);
+  
+  // If found by name but not ID, redirect to ID-based URL
+  useEffect(() => {
+    if (!adventurerById && adventurerByName) {
+      console.log('Redirecting to ID-based URL:', adventurerByName.id);
+      navigate(`/adventurer/${adventurerByName.id}`, { replace: true });
+    }
+  }, [adventurerById, adventurerByName, navigate]);
+  
+  if (loading) {
+    return (
+      <div className="text-center py-12">
+        <Loader size={48} className="text-primary-500 mx-auto mb-4 animate-spin" />
+        <h2 className="text-2xl font-medieval text-primary-300 mb-2">Loading Adventurer...</h2>
+        <p className="text-dark-400">Retrieving character data</p>
+      </div>
+    );
+  }
   
   if (!adventurer) {
     return (
@@ -60,18 +99,13 @@ const AdventurerCard = ({ adventurers }) => {
                 <div className="text-5xl opacity-10">{CLASS_EMBLEMS[adventurer.role] || '🧩'}</div>
               </div>
               <div className="absolute -bottom-16 left-1/2 transform -translate-x-1/2">
-                <div className="relative">
-                  <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-primary-600 bg-dark-700">
-                    <img 
-                      src={createAvatarUrl(adventurer.name)} 
-                      alt={adventurer.name} 
-                      className="w-full h-full object-cover"
-                    />
-                  </div>
-                  <div className="absolute -right-2 -bottom-2 bg-primary-600 text-white rounded-full p-1">
-                    <BadgeCheck size={20} />
-                  </div>
-                </div>
+                <Avatar 
+                  name={adventurer.name} 
+                  avatarUrl={adventurer.avatarUrl}
+                  size="md" 
+                  className="border-primary-600" 
+                  withBadge={true} 
+                />
               </div>
             </div>
             
@@ -93,31 +127,21 @@ const AdventurerCard = ({ adventurers }) => {
                 <p className="text-sm text-dark-300 mb-4 italic">{classDescription}</p>
                 
                 <div className="space-y-4">
-                  <div>
-                    <div className="text-xs text-dark-400 mb-1 flex justify-between">
-                      <span>Primary Mastery</span>
-                      <span>{adventurer.primary_area_score.toFixed(1)}/5</span>
-                    </div>
-                    <div className="progress-bar">
-                      <div 
-                        className="progress-fill bg-primary-500" 
-                        style={{ width: `${(adventurer.primary_area_score / 5) * 100}%` }}
-                      ></div>
-                    </div>
-                  </div>
+                  <ProgressBar
+                    value={adventurer.primary_area_score}
+                    maxValue={5}
+                    label="Primary Mastery"
+                    showValue={true}
+                    color="skill"
+                  />
                   
-                  <div>
-                    <div className="text-xs text-dark-400 mb-1 flex justify-between">
-                      <span>Secondary Mastery</span>
-                      <span>{adventurer.secondary_area_score.toFixed(1)}/5</span>
-                    </div>
-                    <div className="progress-bar">
-                      <div 
-                        className="progress-fill bg-secondary-500" 
-                        style={{ width: `${(adventurer.secondary_area_score / 5) * 100}%` }}
-                      ></div>
-                    </div>
-                  </div>
+                  <ProgressBar
+                    value={adventurer.secondary_area_score}
+                    maxValue={5}
+                    label="Secondary Mastery"
+                    showValue={true}
+                    color="skill"
+                  />
                 </div>
               </div>
               
@@ -165,52 +189,60 @@ const AdventurerCard = ({ adventurers }) => {
             </div>
             
             <div className="p-6">
-              {activeTab === 'skills' ? (
-                <div className="space-y-8">
-                  {Object.entries(adventurer.skills).map(([category, skills], index) => (
-                    <SkillTree 
-                      key={category} 
-                      category={category} 
-                      skills={skills} 
-                      delay={index * 0.1}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="parchment min-h-[400px] relative">
-                  <div className="absolute top-4 right-4 opacity-50 hover:opacity-100 transition-opacity">
-                    <button className="p-2 bg-dark-800 bg-opacity-50 rounded-full">
-                      <Edit size={16} className="text-dark-900" />
-                    </button>
+              <ErrorBoundary>
+                {activeTab === 'skills' ? (
+                  <div className="space-y-8">
+                    {Object.entries(adventurer.skills).map(([category, skills], index) => (
+                      <SkillTree 
+                        key={category} 
+                        category={category} 
+                        skills={skills} 
+                        delay={index * 0.1}
+                      />
+                    ))}
                   </div>
-                  
-                  <div className="prose prose-sm max-w-none text-dark-900">
-                    <h1 className="text-2xl font-medieval text-center mb-4">The Legend of {adventurer.name}</h1>
+                ) : (
+                  <div className="parchment min-h-[400px] relative">
+                    <div className="absolute top-4 right-4 opacity-50 hover:opacity-100 transition-opacity">
+                      <button className="p-2 bg-dark-800 bg-opacity-50 rounded-full">
+                        <Edit size={16} className="text-dark-900" />
+                      </button>
+                    </div>
                     
-                    <p className="mb-4">
-                      {adventurer.name}, known throughout the realms as a {adventurer.role} of great skill, has achieved
-                      the rank of {rankName} through countless trials and quests.
-                    </p>
-                    
-                    <p className="mb-4">
-                      With exceptional talent in {Object.entries(adventurer.skills)
-                        .flatMap(([_, skills]) => Object.entries(skills)
-                          .filter(([_, skill]) => skill.score >= 4)
-                          .map(([name, _]) => name)
-                        )
-                        .slice(0, 3)
-                        .join(', ') || "various skills"}, 
-                      {adventurer.name} has become a valued member of the guild, offering guidance to apprentices
-                      and taking on challenges that would overwhelm lesser adventurers.
-                    </p>
-                    
-                    <p>
-                      Their journey continues as they seek to master new skills and overcome greater challenges
-                      in service to the realm.
-                    </p>
+                    <div className="prose prose-sm max-w-none text-dark-900">
+                      {adventurer.lore ? (
+                        <div dangerouslySetInnerHTML={{ __html: adventurer.lore }} />
+                      ) : (
+                        <>
+                          <h1 className="text-2xl font-medieval text-center mb-4">The Legend of {adventurer.name}</h1>
+                          
+                          <p className="mb-4">
+                            {adventurer.name}, known throughout the realms as a {adventurer.role} of great skill, has achieved
+                            the rank of {rankName} through countless trials and quests.
+                          </p>
+                          
+                          <p className="mb-4">
+                            With exceptional talent in {Object.entries(adventurer.skills)
+                              .flatMap(([_, skills]) => Object.entries(skills)
+                                .filter(([_, skill]) => skill.score >= 4)
+                                .map(([name, _]) => name)
+                              )
+                              .slice(0, 3)
+                              .join(', ') || "various skills"}, 
+                            {adventurer.name} has become a valued member of the guild, offering guidance to apprentices
+                            and taking on challenges that would overwhelm lesser adventurers.
+                          </p>
+                          
+                          <p>
+                            Their journey continues as they seek to master new skills and overcome greater challenges
+                            in service to the realm.
+                          </p>
+                        </>
+                      )}
+                    </div>
                   </div>
-                </div>
-              )}
+                )}
+              </ErrorBoundary>
             </div>
           </motion.div>
         </div>

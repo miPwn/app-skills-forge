@@ -2,26 +2,19 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import { ArrowRight, Scroll } from 'lucide-react';
-import { getRankName, createAvatarUrl } from '../../utils/helpers';
+import { getRankName } from '../../utils/rankHelpers';
 import { CLASS_EMBLEMS } from '../../utils/constants';
+import Avatar from '../shared/Avatar';
+import SkillBadge from '../shared/SkillBadge';
+import ProgressBar from '../shared/ProgressBar';
+import useAdventurerSkills from '../../hooks/useAdventurerSkills';
 
+/**
+ * AdventurerCard component for the guild grid view
+ */
 const AdventurerCard = ({ adventurer, index }) => {
   const rankName = getRankName(adventurer.primary_score);
-  
-  // Get the top skills (score >= 3)
-  const topSkills = [];
-  Object.entries(adventurer.skills).forEach(([category, skills]) => {
-    Object.entries(skills).forEach(([skillName, skill]) => {
-      if (skill.score >= 3) {
-        topSkills.push({ name: skillName, score: skill.score, color: skill.color });
-      }
-    });
-  });
-  
-  // Sort by score descending and take top 3
-  const displaySkills = topSkills
-    .sort((a, b) => b.score - a.score)
-    .slice(0, 3);
+  const displaySkills = useAdventurerSkills(adventurer, 3, 3);
   
   return (
     <motion.div
@@ -32,17 +25,16 @@ const AdventurerCard = ({ adventurer, index }) => {
       whileHover={{ scale: 1.02 }}
       whileTap={{ scale: 0.98 }}
     >
-      <Link to={`/adventurer/${encodeURIComponent(adventurer.name)}`} className="block">
+      <Link to={`/adventurer/${encodeURIComponent(adventurer.id)}`} className="block">
         <div className="relative">
           <div className="h-24 bg-gradient-to-r from-dark-700 to-dark-800"></div>
           <div className="absolute -bottom-8 left-4">
-            <div className="w-16 h-16 rounded-full overflow-hidden border-2 border-primary-600">
-              <img 
-                src={createAvatarUrl(adventurer.name)} 
-                alt={adventurer.name} 
-                className="w-full h-full object-cover"
-              />
-            </div>
+            <Avatar 
+              name={adventurer.name} 
+              avatarUrl={adventurer.avatarUrl}
+              size="sm" 
+              className="border-primary-600" 
+            />
           </div>
         </div>
         
@@ -65,24 +57,18 @@ const AdventurerCard = ({ adventurer, index }) => {
           </div>
           
           <div className="mt-4">
-            <div className="text-xs text-dark-400 mb-1">Primary Mastery</div>
-            <div className="progress-bar">
-              <div 
-                className="progress-fill bg-primary-500" 
-                style={{ width: `${(adventurer.primary_area_score / 5) * 100}%` }}
-              ></div>
-            </div>
+            <ProgressBar
+              value={adventurer.primary_area_score}
+              maxValue={5}
+              label="Primary Mastery"
+              color="skill"
+              showValue={true}
+            />
           </div>
           
           <div className="mt-4 flex flex-wrap gap-2">
             {displaySkills.map(skill => (
-              <div 
-                key={skill.name}
-                className="skill-badge"
-                style={{ backgroundColor: `${skill.color}20`, color: skill.color }}
-              >
-                {skill.name.length > 12 ? `${skill.name.substring(0, 10)}...` : skill.name}
-              </div>
+              <SkillBadge key={skill.name} skill={skill} truncate={true} />
             ))}
             
             {displaySkills.length === 0 && (

@@ -1,0 +1,7352 @@
+[
+  {
+    "name": "Ajit Palani",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 1
+      },
+      "Powershell": {
+        "score": 1
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 2
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 1
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 3
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 2
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 2
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 2
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Akash Bumiya",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 4
+      },
+      "Powershell": {
+        "score": 4
+      },
+      "HTML & CSS": {
+        "score": 4
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 3
+      },
+      "React or similar": {
+        "score": 3
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 4
+      },
+      "user-event library": {
+        "score": 3
+      },
+      ".NET 6 with C#": {
+        "score": 1
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 1
+      },
+      "Entity Framework Core": {
+        "score": 1
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 1
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Akshayasarani Thirumuruganand",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 5
+      },
+      "Javascript": {
+        "score": 5
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 3
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 5
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 3
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Azhar Mohammad",
+    "role": "Back End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 1
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 2
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 3
+      },
+      "FakeItEasy": {
+        "score": 3
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 2
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 2
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 3
+      },
+      "Redis": {
+        "score": 3
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 2
+      },
+      "Azure Service Bus or similar": {
+        "score": 3
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 3
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 2
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 2
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Chris Nash",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Daisy Ticehurst",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 2
+      },
+      "PrimeNg": {
+        "score": 1
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 3
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 2
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 2
+      },
+      "Entity Framework Core": {
+        "score": 2
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 3
+      },
+      "Azure SQL": {
+        "score": 2
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 1
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 2
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 1
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 1
+      },
+      "Terraform": {
+        "score": 1
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 1
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 4
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Daniel Raju",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 5
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 1
+      },
+      "Blazor": {
+        "score": 3
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 1
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 2
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Deepak Karkera",
+    "role": "Dev Ops",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 4
+      },
+      "Powershell": {
+        "score": 4
+      },
+      "HTML & CSS": {
+        "score": 1
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 1
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 1
+      },
+      "Blazor": {
+        "score": 1
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 1
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 1
+      },
+      "Entity Framework Core": {
+        "score": 1
+      },
+      "CosmosDB": {
+        "score": 1
+      },
+      "Postgres": {
+        "score": 2
+      },
+      "SQL Server": {
+        "score": 2
+      },
+      "Azure SQL": {
+        "score": 2
+      },
+      "Redis": {
+        "score": 2
+      },
+      "KeyVault": {
+        "score": 4
+      },
+      "Azure Config": {
+        "score": 4
+      },
+      "Azure Service Bus or similar": {
+        "score": 1
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 4
+      },
+      "Azure": {
+        "score": 5
+      },
+      "Docker": {
+        "score": 4
+      },
+      "Kubernetes": {
+        "score": 4
+      },
+      "Helm": {
+        "score": 3
+      },
+      "GitOps": {
+        "score": 3
+      },
+      "Terraform": {
+        "score": 4
+      },
+      "Postman or similar": {
+        "score": 2
+      },
+      "K6": {
+        "score": 1
+      },
+      "Playwright": {
+        "score": 1
+      },
+      "Selenium": {
+        "score": 1
+      },
+      "Jest": {
+        "score": 1
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 2
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 3
+      },
+      "Veracode": {
+        "score": 1
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Gary Varga",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 1
+      },
+      "Blazor": {
+        "score": 3
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 4
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 4
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 3
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 3
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 1
+      },
+      "Azure Service Bus or similar": {
+        "score": 1
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 3
+      },
+      "Azure": {
+        "score": 2
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 2
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 2
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 1
+      },
+      "NewRelic": {
+        "score": 1
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 1
+      }
+    }
+  },
+  {
+    "name": "Gayathri Sidana",
+    "role": "AQA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Hardik Baravaliya",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 4
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 4
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Hari Prasath",
+    "role": "QA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 2
+      },
+      "Javascript": {
+        "score": 1
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Janagar Ramprabha",
+    "role": "AQA",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 5
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 1
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 2
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 2
+      },
+      "Playwright": {
+        "score": 5
+      },
+      "Selenium": {
+        "score": 1
+      },
+      "Jest": {
+        "score": 1
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Jayaraj Shanmugam",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 5
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 2
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Leroy Tomlin",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 2
+      },
+      "PrimeNg": {
+        "score": 1
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 3
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 2
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 1
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 5
+      },
+      "Azure SQL": {
+        "score": 4
+      },
+      "Redis": {
+        "score": 3
+      },
+      "KeyVault": {
+        "score": 2
+      },
+      "Azure Config": {
+        "score": 3
+      },
+      "Azure Service Bus or similar": {
+        "score": 2
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 3
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 1
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 2
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 3
+      },
+      "Selenium": {
+        "score": 1
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 2
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 3
+      },
+      "Veracode": {
+        "score": 1
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Michael Nunn",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 2
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 4
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 3
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 3
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 3
+      },
+      "RESTful\nWebAPIs": {
+        "score": 1
+      },
+      "Entity Framework Core": {
+        "score": 1
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 2
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 1
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "MohdNizamuddin Moinuddin",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 2
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 2
+      },
+      "Jasmin+Karma": {
+        "score": 1
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 4
+      },
+      "FakeItEasy": {
+        "score": 3
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 2
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 3
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 2
+      },
+      "Redis": {
+        "score": 3
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 2
+      },
+      "Azure Service Bus or similar": {
+        "score": 2
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 2
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Muthukumaran Marimuthu",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 4
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 2
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 2
+      },
+      "Azure Config": {
+        "score": 2
+      },
+      "Azure Service Bus or similar": {
+        "score": 2
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 2
+      },
+      "Azure": {
+        "score": 2
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 4
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Nagarej Sekar",
+    "role": "AQA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Nandhagopal Prabhakaran",
+    "role": "QA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 1
+      },
+      "Javascript": {
+        "score": 2
+      },
+      "TypeScript": {
+        "score": 1
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 2
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 1
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Narayani Ramakrishnan",
+    "role": "Back End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 2
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 3
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 3
+      },
+      "Selenium": {
+        "score": 2
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Natasha Coia",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Nazir Ahmed",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 3
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 3
+      },
+      "Blazor": {
+        "score": 5
+      },
+      "Jasmin+Karma": {
+        "score": 1
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 5
+      },
+      "xUnit or similar": {
+        "score": 4
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 3
+      },
+      "RESTful\nWebAPIs": {
+        "score": 5
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 2
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 4
+      },
+      "Redis": {
+        "score": 3
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 3
+      },
+      "Azure Service Bus or similar": {
+        "score": 3
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 3
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 2
+      },
+      "Kubernetes": {
+        "score": 2
+      },
+      "Helm": {
+        "score": 1
+      },
+      "GitOps": {
+        "score": 1
+      },
+      "Terraform": {
+        "score": 2
+      },
+      "Postman or similar": {
+        "score": 4
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 3
+      },
+      "Auth0 or similar": {
+        "score": 3
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 2
+      },
+      "PowerBI": {
+        "score": 3
+      },
+      "Fabric": {
+        "score": 1
+      }
+    }
+  },
+  {
+    "name": "Neha Sakariya",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 2
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 1
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 3
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 2
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Parth Patil",
+    "role": "Back End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 3
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 3
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 4
+      },
+      "FakeItEasy": {
+        "score": 4
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 4
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 3
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 3
+      },
+      "Redis": {
+        "score": 4
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 3
+      },
+      "Azure Service Bus or similar": {
+        "score": 3
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 2
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 3
+      },
+      "Kubernetes": {
+        "score": 3
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 2
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 3
+      },
+      "Auth0 or similar": {
+        "score": 2
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Pradeep Yamajala",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 5
+      },
+      "Javascript": {
+        "score": 5
+      },
+      "TypeScript": {
+        "score": 2
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 3
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 5
+      },
+      "xUnit or similar": {
+        "score": 5
+      },
+      "FakeItEasy": {
+        "score": 4
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 4
+      },
+      "RESTful\nWebAPIs": {
+        "score": 5
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 2
+      },
+      "Postgres": {
+        "score": 4
+      },
+      "SQL Server": {
+        "score": 5
+      },
+      "Azure SQL": {
+        "score": 2
+      },
+      "Redis": {
+        "score": 4
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 3
+      },
+      "Azure Service Bus or similar": {
+        "score": 3
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 3
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 3
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 3
+      },
+      "Auth0 or similar": {
+        "score": 3
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Ragavi Tamilvanan",
+    "role": "Back End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 1
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 2
+      },
+      "TypeScript": {
+        "score": 1
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 3
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 2
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 1
+      },
+      "Redis": {
+        "score": 2
+      },
+      "KeyVault": {
+        "score": 2
+      },
+      "Azure Config": {
+        "score": 2
+      },
+      "Azure Service Bus or similar": {
+        "score": 2
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 2
+      },
+      "Azure": {
+        "score": 2
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 2
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 1
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Rohan Ahuja",
+    "role": "QA",
+    "skills": {
+      "Git": {
+        "score": 1
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 1
+      },
+      "HTML & CSS": {
+        "score": 2
+      },
+      "Javascript": {
+        "score": 1
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 1
+      },
+      "K6": {
+        "score": 1
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Sandeep Multani",
+    "role": "Back End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 4
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 2
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 2
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 4
+      },
+      "FakeItEasy": {
+        "score": 4
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 4
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 3
+      },
+      "CosmosDB": {
+        "score": 3
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 3
+      },
+      "Redis": {
+        "score": 3
+      },
+      "KeyVault": {
+        "score": 3
+      },
+      "Azure Config": {
+        "score": 2
+      },
+      "Azure Service Bus or similar": {
+        "score": 4
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 4
+      },
+      "Azure": {
+        "score": 3
+      },
+      "Docker": {
+        "score": 4
+      },
+      "Kubernetes": {
+        "score": 3
+      },
+      "Helm": {
+        "score": 3
+      },
+      "GitOps": {
+        "score": 3
+      },
+      "Terraform": {
+        "score": 4
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 2
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 1
+      },
+      "Jest": {
+        "score": 2
+      },
+      "Pact JS": {
+        "score": 2
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 3
+      },
+      "AppInsights": {
+        "score": 2
+      },
+      "NewRelic": {
+        "score": 2
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 3
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Sandip Gadekar",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 4
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 4
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 2
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 2
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 1
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Sankarlingam Ravi",
+    "role": "AQA",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 3
+      },
+      "Powershell": {
+        "score": 3
+      },
+      "HTML & CSS": {
+        "score": 2
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 3
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 3
+      },
+      "Selenium": {
+        "score": 2
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Schubert Periera",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Sherin Palappurath Mailyekkal",
+    "role": "QA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 1
+      },
+      "Javascript": {
+        "score": 1
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 3
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Thirunavukarasu Vellai",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 4
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 3
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 2
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 3
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 3
+      },
+      "RESTful\nWebAPIs": {
+        "score": 4
+      },
+      "Entity Framework Core": {
+        "score": 4
+      },
+      "CosmosDB": {
+        "score": 1
+      },
+      "Postgres": {
+        "score": 3
+      },
+      "SQL Server": {
+        "score": 4
+      },
+      "Azure SQL": {
+        "score": 3
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 1
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Venkatesh Prasath",
+    "role": "QA",
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 2
+      },
+      "Javascript": {
+        "score": 1
+      },
+      "TypeScript": {
+        "score": 1
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 2
+      },
+      "Selenium": {
+        "score": 2
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Vimaladevi Vijayasegaran",
+    "role": "Full Stack",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 2
+      },
+      "TypeScript": {
+        "score": 3
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 4
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 4
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 1
+      },
+      "Entity Framework Core": {
+        "score": 2
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 2
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Vishal Singh",
+    "role": "Front End",
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 4
+      },
+      "TypeScript": {
+        "score": 4
+      },
+      "Angular": {
+        "score": 4
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 3
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 1
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 1
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 2
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 2
+      },
+      "Auth0 or similar": {
+        "score": 1
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": NaN,
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Team Average",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 3
+      },
+      "Bash": {
+        "score": 2
+      },
+      "Powershell": {
+        "score": 2
+      },
+      "HTML & CSS": {
+        "score": 3
+      },
+      "Javascript": {
+        "score": 3
+      },
+      "TypeScript": {
+        "score": 2
+      },
+      "Angular": {
+        "score": 1
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 1
+      },
+      "Blazor": {
+        "score": 1
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 1
+      },
+      "xUnit or similar": {
+        "score": 1
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 2
+      },
+      "Entity Framework Core": {
+        "score": 1
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 1
+      },
+      "SQL Server": {
+        "score": 2
+      },
+      "Azure SQL": {
+        "score": 1
+      },
+      "Redis": {
+        "score": 1
+      },
+      "KeyVault": {
+        "score": 1
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 1
+      },
+      "Azure": {
+        "score": 1
+      },
+      "Docker": {
+        "score": 1
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 1
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": NaN,
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Critical Knowledge Gaps",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 1
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 1
+      },
+      "user-event library": {
+        "score": 1
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 1
+      },
+      "Helm": {
+        "score": 1
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 1
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 1
+      },
+      "Temporal Cloud": {
+        "score": 1
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 1
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 1
+      }
+    }
+  },
+  {
+    "name": NaN,
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": NaN,
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "Self Rating Guide",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "0 - Never used it",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "1 - Exposure",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "2 - Competent",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "3 - Proficient",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "4 - Expert",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  },
+  {
+    "name": "5 - Guru",
+    "role": NaN,
+    "skills": {
+      "Git": {
+        "score": 0
+      },
+      "Bash": {
+        "score": 0
+      },
+      "Powershell": {
+        "score": 0
+      },
+      "HTML & CSS": {
+        "score": 0
+      },
+      "Javascript": {
+        "score": 0
+      },
+      "TypeScript": {
+        "score": 0
+      },
+      "Angular": {
+        "score": 0
+      },
+      "PrimeNg": {
+        "score": 0
+      },
+      "React or similar": {
+        "score": 0
+      },
+      "Blazor": {
+        "score": 0
+      },
+      "Jasmin+Karma": {
+        "score": 0
+      },
+      "user-event library": {
+        "score": 0
+      },
+      ".NET 6 with C#": {
+        "score": 0
+      },
+      "xUnit or similar": {
+        "score": 0
+      },
+      "FakeItEasy": {
+        "score": 0
+      },
+      "Moq or NSubstitute or similar": {
+        "score": 0
+      },
+      "RESTful\nWebAPIs": {
+        "score": 0
+      },
+      "Entity Framework Core": {
+        "score": 0
+      },
+      "CosmosDB": {
+        "score": 0
+      },
+      "Postgres": {
+        "score": 0
+      },
+      "SQL Server": {
+        "score": 0
+      },
+      "Azure SQL": {
+        "score": 0
+      },
+      "Redis": {
+        "score": 0
+      },
+      "KeyVault": {
+        "score": 0
+      },
+      "Azure Config": {
+        "score": 0
+      },
+      "Azure Service Bus or similar": {
+        "score": 0
+      },
+      "Azure DevOps\nPipelines": {
+        "score": 0
+      },
+      "Azure": {
+        "score": 0
+      },
+      "Docker": {
+        "score": 0
+      },
+      "Kubernetes": {
+        "score": 0
+      },
+      "Helm": {
+        "score": 0
+      },
+      "GitOps": {
+        "score": 0
+      },
+      "Terraform": {
+        "score": 0
+      },
+      "Postman or similar": {
+        "score": 0
+      },
+      "K6": {
+        "score": 0
+      },
+      "Playwright": {
+        "score": 0
+      },
+      "Selenium": {
+        "score": 0
+      },
+      "Jest": {
+        "score": 0
+      },
+      "Pact JS": {
+        "score": 0
+      },
+      "Temporal Cloud": {
+        "score": 0
+      },
+      "ElasticSearch": {
+        "score": 0
+      },
+      "Auth0 or similar": {
+        "score": 0
+      },
+      "AppInsights": {
+        "score": 0
+      },
+      "NewRelic": {
+        "score": 0
+      },
+      "Veracode": {
+        "score": 0
+      },
+      "PowerBI": {
+        "score": 0
+      },
+      "Fabric": {
+        "score": 0
+      }
+    }
+  }
+]

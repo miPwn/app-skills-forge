@@ -150,7 +150,7 @@ code {
   }
   
   .gem {
-    @apply inline-block rounded-full w-8 h-8 flex items-center justify-center font-bold text-white shadow-lg border-2 border-white/20;
+    @apply inline-block rounded-full w-8 h-8 flex items-center justify-center font-bold shadow-lg border-2 border-white/20;
   }
   
   .role-emblem {

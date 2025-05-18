@@ -87,12 +87,12 @@ export const calculatePrimaryScore = (adventurer) => {
  */
 export const getSkillColor = (score) => {
   switch (score) {
-    case 0: return "#FF0000"; // Red
-    case 1: return "#FF4500"; // Dark Orange
-    case 2: return "#FFA500"; // Orange
-    case 3: return "#FFFF00"; // Yellow
-    case 4: return "#ADFF2F"; // Green-Yellow
-    case 5: return "#008000"; // Green
+    case 0: return "#E53E3E"; // Red for zero
+    case 1: return "#F56565"; // Lighter red for 1
+    case 2: return "#ED8936"; // Orange for 2
+    case 3: return "#68D391"; // Light green for 3
+    case 4: return "#48BB78"; // Brighter green for 4
+    case 5: return "#2F855A"; // Full green for 5
     default: return "#808080"; // Gray for unknown
   }
 };

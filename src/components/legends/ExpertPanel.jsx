@@ -1,11 +1,17 @@
-import React from 'react';
+import React, { useMemo } from 'react';
 import { Link } from 'react-router-dom';
 import { Trophy, Award } from 'lucide-react';
 import { motion } from 'framer-motion';
-import { findTopExperts } from '../../utils/helpers';
+import { findTopExperts } from '../../utils/skillHelpers';
+import { useAdventurers } from '../../contexts/AdventurerContext';
 
-const ExpertPanel = ({ adventurers, category }) => {
-  const experts = findTopExperts(adventurers);
+/**
+ * Panel displaying experts for a specific skill category
+ */
+const ExpertPanel = ({ category }) => {
+  const { adventurers } = useAdventurers();
+  
+  const experts = useMemo(() => findTopExperts(adventurers), [adventurers]);
   const categoryExperts = experts[category] || {};
   
   // Get skills with experts

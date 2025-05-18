@@ -33,13 +33,18 @@ const SkillGapChart = ({ skillAverages, selectedCategory }) => {
     const labels = Object.keys(categoryData);
     const data = Object.values(categoryData);
     
-    // Create a color array based on the values
+    // Create a color array based on the values using our skill level colors
     const colors = data.map(value => {
-      if (value <= 1) return 'rgba(239, 68, 68, 0.7)';  // Red for gaps
-      if (value <= 2) return 'rgba(249, 115, 22, 0.7)'; // Orange for low
-      if (value <= 3) return 'rgba(245, 158, 11, 0.7)'; // Amber for medium
-      if (value <= 4) return 'rgba(139, 92, 246, 0.7)'; // Purple for good
-      return 'rgba(34, 197, 94, 0.7)';                  // Green for excellent
+      const roundedValue = Math.round(value);
+      switch (roundedValue) {
+        case 0: return 'rgba(229, 62, 62, 0.7)';   // Red for zero
+        case 1: return 'rgba(245, 101, 101, 0.7)'; // Lighter red for 1
+        case 2: return 'rgba(237, 137, 54, 0.7)';  // Orange for 2
+        case 3: return 'rgba(104, 211, 145, 0.7)'; // Light green for 3
+        case 4: return 'rgba(72, 187, 120, 0.7)';  // Brighter green for 4
+        case 5: return 'rgba(47, 133, 90, 0.7)';   // Full green for 5
+        default: return 'rgba(128, 128, 128, 0.7)'; // Gray for unknown
+      }
     });
     
     setChartData({

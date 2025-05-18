@@ -1,0 +1,70 @@
+{
+  "collections": [
+    {
+      "name": "adventurers",
+      "type": "base",
+      "schema": [
+        {
+          "name": "name",
+          "type": "text",
+          "required": true,
+          "unique": true
+        },
+        {
+          "name": "role",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "primary_area_score",
+          "type": "number"
+        },
+        {
+          "name": "secondary_area_score",
+          "type": "number"
+        },
+        {
+          "name": "primary_score",
+          "type": "number"
+        },
+        {
+          "name": "avatarUrl",
+          "type": "text"
+        },
+        {
+          "name": "skills",
+          "type": "json"
+        },
+        {
+          "name": "lore",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "name": "activity_logs",
+      "type": "base",
+      "schema": [
+        {
+          "name": "timestamp",
+          "type": "date",
+          "required": true
+        },
+        {
+          "name": "action",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "user",
+          "type": "text",
+          "required": true
+        },
+        {
+          "name": "ipAddress",
+          "type": "text"
+        }
+      ]
+    }
+  ]
+}

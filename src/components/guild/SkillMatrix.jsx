@@ -104,12 +104,16 @@ const SkillMatrix = ({ adventurers }) => {
                     >
                       {skillData ? (
                         <div className="flex justify-center">
-                          <div 
+                          <div
                             className="w-8 h-8 rounded-full flex items-center justify-center text-sm font-medium"
-                            style={{ backgroundColor: skillData.color }}
+                            style={{
+                              backgroundColor: skillData.color,
+                              color: skillData.score === 0 || skillData.score >= 4 ? '#FFFFFF' : '#333333',
+                              textShadow: '0px 0px 2px rgba(0,0,0,0.3)'
+                            }}
                             title={`${skill}: ${skillData.score}`}
                           >
-                            {skillData.score}
+                            {skillData.score.toFixed(1)}
                           </div>
                         </div>
                       ) : (

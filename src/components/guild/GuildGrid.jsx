@@ -1,44 +1,53 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Search, Filter, SortDesc } from 'lucide-react';
 import AdventurerCard from './AdventurerCard';
+import { useAdventurers } from '../../contexts/AdventurerContext';
 
-const GuildGrid = ({ adventurers }) => {
+/**
+ * Grid display of adventurers with filtering and sorting
+ */
+const GuildGrid = () => {
+  const { adventurers } = useAdventurers();
   const [searchTerm, setSearchTerm] = useState('');
   const [roleFilter, setRoleFilter] = useState('');
   const [sortBy, setSortBy] = useState('rank'); // 'rank', 'name', 'role'
   
   // Get unique roles for filtering
-  const roles = [...new Set(adventurers
-    .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board')
-    .map(adv => adv.role)
-    .filter(Boolean)
-  )];
+  const roles = useMemo(() => {
+    return [...new Set(adventurers
+      .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board')
+      .map(adv => adv.role)
+      .filter(Boolean)
+    )];
+  }, [adventurers]);
   
   // Filter and sort adventurers
-  const filteredAdventurers = adventurers
-    .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board') // Exclude special entries
-    .filter(adv => {
-      // Search filter
-      const searchLower = searchTerm.toLowerCase();
-      const nameMatch = adv.name.toLowerCase().includes(searchLower);
-      
-      // Role filter
-      const roleMatch = roleFilter === '' || adv.role === roleFilter;
-      
-      return nameMatch && roleMatch;
-    })
-    .sort((a, b) => {
-      // Sort
-      switch (sortBy) {
-        case 'name':
-          return a.name.localeCompare(b.name);
-        case 'role':
-          return a.role.localeCompare(b.role);
-        case 'rank':
-        default:
-          return b.primary_score - a.primary_score;
-      }
-    });
+  const filteredAdventurers = useMemo(() => {
+    return adventurers
+      .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board') // Exclude special entries
+      .filter(adv => {
+        // Search filter
+        const searchLower = searchTerm.toLowerCase();
+        const nameMatch = adv.name.toLowerCase().includes(searchLower);
+        
+        // Role filter
+        const roleMatch = roleFilter === '' || adv.role === roleFilter;
+        
+        return nameMatch && roleMatch;
+      })
+      .sort((a, b) => {
+        // Sort
+        switch (sortBy) {
+          case 'name':
+            return a.name.localeCompare(b.name);
+          case 'role':
+            return a.role.localeCompare(b.role);
+          case 'rank':
+          default:
+            return b.primary_score - a.primary_score;
+        }
+      });
+  }, [adventurers, searchTerm, roleFilter, sortBy]);
   
   return (
     <div>

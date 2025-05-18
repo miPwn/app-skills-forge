@@ -3,9 +3,15 @@ import { Scroll, Table, Users } from 'lucide-react';
 import { motion } from 'framer-motion';
 import GuildGrid from '../components/guild/GuildGrid';
 import SkillMatrix from '../components/guild/SkillMatrix';
+import { useAdventurers } from '../contexts/AdventurerContext';
+import ErrorBoundary from '../components/shared/ErrorBoundary';
 
-const GuildHallPage = ({ adventurers }) => {
+/**
+ * Guild Hall page component
+ */
+const GuildHallPage = () => {
   const [viewMode, setViewMode] = useState('grid'); // 'grid' or 'matrix'
+  const { adventurers } = useAdventurers();
   
   return (
     <div>
@@ -53,11 +59,13 @@ const GuildHallPage = ({ adventurers }) => {
         </div>
       </div>
       
-      {viewMode === 'grid' ? (
-        <GuildGrid adventurers={adventurers} />
-      ) : (
-        <SkillMatrix adventurers={adventurers} />
-      )}
+      <ErrorBoundary>
+        {viewMode === 'grid' ? (
+          <GuildGrid adventurers={adventurers} />
+        ) : (
+          <SkillMatrix adventurers={adventurers} />
+        )}
+      </ErrorBoundary>
       
       <motion.div
         className="mt-12 text-center"

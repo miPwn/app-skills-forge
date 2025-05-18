@@ -1,14 +1,29 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import { Beer, BarChart3 } from 'lucide-react';
 import { motion } from 'framer-motion';
 import SkillGapChart from '../components/tavern/SkillGapChart';
 import QuestCard from '../components/tavern/QuestCard';
-import { identifySkillGaps } from '../utils/helpers';
+import { identifySkillGaps } from '../utils/skillHelpers';
+import { useAdventurers } from '../contexts/AdventurerContext';
+import ErrorBoundary from '../components/shared/ErrorBoundary';
 
-const TavernTalkPage = ({ adventurers }) => {
+/**
+ * Tavern Talk page component for skill analysis and quests
+ */
+const TavernTalkPage = () => {
+  const { adventurers } = useAdventurers();
   const [selectedCategory, setSelectedCategory] = useState('Fundamental');
   const [skillAverages, setSkillAverages] = useState({});
   const [skillGaps, setSkillGaps] = useState({});
+  
+  // Get unique categories from the first real adventurer
+  const categories = useMemo(() => {
+    const firstRealAdventurer = adventurers.find(
+      adv => adv.role !== 'Guild' && adv.role !== 'Quest Board'
+    );
+    
+    return firstRealAdventurer ? Object.keys(firstRealAdventurer.skills) : [];
+  }, [adventurers]);
   
   useEffect(() => {
     // Calculate average skill scores
@@ -56,13 +71,6 @@ const TavernTalkPage = ({ adventurers }) => {
     setSkillGaps(gaps);
   }, [adventurers]);
   
-  // Get unique categories from the first real adventurer
-  const firstRealAdventurer = adventurers.find(
-    adv => adv.role !== 'Guild' && adv.role !== 'Quest Board'
-  );
-  
-  const categories = firstRealAdventurer ? Object.keys(firstRealAdventurer.skills) : [];
-  
   // Get skill gaps for the current category
   const currentGaps = skillGaps[selectedCategory] || {};
   const hasGaps = Object.keys(currentGaps).length > 0;
@@ -101,70 +109,72 @@ const TavernTalkPage = ({ adventurers }) => {
         ))}
       </div>
       
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-        <div className="lg:col-span-2">
-          <motion.div
-            className="card"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4 }}
-          >
-            <div className="card-header">
-              <h2 className="font-medieval flex items-center">
-                <BarChart3 size={20} className="mr-2 text-accent-400" />
-                <span>{selectedCategory} Skills Analysis</span>
-              </h2>
-            </div>
-            
-            <div className="p-4">
-              <SkillGapChart 
-                skillAverages={skillAverages} 
-                selectedCategory={selectedCategory}
-              />
-            </div>
-          </motion.div>
+      <ErrorBoundary>
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <div className="lg:col-span-2">
+            <motion.div
+              className="card"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4 }}
+            >
+              <div className="card-header">
+                <h2 className="font-medieval flex items-center">
+                  <BarChart3 size={20} className="mr-2 text-accent-400" />
+                  <span>{selectedCategory} Skills Analysis</span>
+                </h2>
+              </div>
+              
+              <div className="p-4">
+                <SkillGapChart 
+                  skillAverages={skillAverages} 
+                  selectedCategory={selectedCategory}
+                />
+              </div>
+            </motion.div>
+          </div>
+          
+          <div className="lg:col-span-1">
+            <motion.div
+              className="card"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.2 }}
+            >
+              <div className="card-header">
+                <h2 className="font-medieval flex items-center">
+                  <Beer size={20} className="mr-2 text-accent-400" />
+                  <span>Quest Board</span>
+                </h2>
+              </div>
+              
+              <div className="p-4">
+                {hasGaps ? (
+                  <div className="space-y-4">
+                    {Object.entries(currentGaps).map(([skill, score]) => (
+                      <QuestCard 
+                        key={skill} 
+                        skill={skill} 
+                        score={score} 
+                        category={selectedCategory}
+                      />
+                    ))}
+                  </div>
+                ) : (
+                  <div className="text-center py-8">
+                    <div className="text-4xl mb-4">🎉</div>
+                    <h3 className="text-lg font-medieval text-accent-300 mb-2">No Quests Needed!</h3>
+                    <p className="text-dark-400 text-sm">
+                      The guild has sufficient knowledge in all {selectedCategory} skills.
+                      Check other categories for potential quests.
+                    </p>
+                  </div>
+                )}
+              </div>
+            </motion.div>
+          </div>
         </div>
-        
-        <div className="lg:col-span-1">
-          <motion.div
-            className="card"
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-          >
-            <div className="card-header">
-              <h2 className="font-medieval flex items-center">
-                <Beer size={20} className="mr-2 text-accent-400" />
-                <span>Quest Board</span>
-              </h2>
-            </div>
-            
-            <div className="p-4">
-              {hasGaps ? (
-                <div className="space-y-4">
-                  {Object.entries(currentGaps).map(([skill, score]) => (
-                    <QuestCard 
-                      key={skill} 
-                      skill={skill} 
-                      score={score} 
-                      category={selectedCategory}
-                    />
-                  ))}
-                </div>
-              ) : (
-                <div className="text-center py-8">
-                  <div className="text-4xl mb-4">🎉</div>
-                  <h3 className="text-lg font-medieval text-accent-300 mb-2">No Quests Needed!</h3>
-                  <p className="text-dark-400 text-sm">
-                    The guild has sufficient knowledge in all {selectedCategory} skills.
-                    Check other categories for potential quests.
-                  </p>
-                </div>
-              )}
-            </div>
-          </motion.div>
-        </div>
-      </div>
+      </ErrorBoundary>
       
       <motion.div
         className="mt-12 text-center"

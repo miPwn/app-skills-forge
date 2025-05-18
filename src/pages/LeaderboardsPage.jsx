@@ -1,28 +1,39 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
 import { Medal, Trophy, Filter, Search } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { CLASS_EMBLEMS } from '../utils/constants';
+import { useAdventurers } from '../contexts/AdventurerContext';
+import { createAvatarUrl } from '../utils/avatarHelpers';
+import ErrorBoundary from '../components/shared/ErrorBoundary';
 
-const LeaderboardsPage = ({ adventurers }) => {
+/**
+ * Leaderboards page component
+ */
+const LeaderboardsPage = () => {
+  const { adventurers } = useAdventurers();
   const [selectedRole, setSelectedRole] = useState('All');
   const [searchTerm, setSearchTerm] = useState('');
   
-  // Filter out special entries and sort by primary score
-  const filteredAdventurers = adventurers
-    .filter(adv => 
-      adv.role !== 'Guild' && 
-      adv.role !== 'Quest Board' &&
-      (selectedRole === 'All' || adv.role === selectedRole) &&
-      adv.name.toLowerCase().includes(searchTerm.toLowerCase())
-    )
-    .sort((a, b) => b.primary_score - a.primary_score);
-  
   // Get unique roles
-  const roles = ['All', ...new Set(adventurers
-    .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board')
-    .map(adv => adv.role)
-  )];
+  const roles = useMemo(() => {
+    return ['All', ...new Set(adventurers
+      .filter(adv => adv.role !== 'Guild' && adv.role !== 'Quest Board')
+      .map(adv => adv.role)
+    )];
+  }, [adventurers]);
+  
+  // Filter out special entries and sort by primary score
+  const filteredAdventurers = useMemo(() => {
+    return adventurers
+      .filter(adv => 
+        adv.role !== 'Guild' && 
+        adv.role !== 'Quest Board' &&
+        (selectedRole === 'All' || adv.role === selectedRole) &&
+        adv.name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+      .sort((a, b) => b.primary_score - a.primary_score);
+  }, [adventurers, selectedRole, searchTerm]);
   
   return (
     <div>
@@ -75,119 +86,125 @@ const LeaderboardsPage = ({ adventurers }) => {
         </div>
       </div>
       
-      <motion.div 
-        className="card"
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.4 }}
-      >
-        <div className="card-header">
-          <h2 className="font-medieval flex items-center">
-            <Trophy size={20} className="mr-2 text-yellow-400" />
-            <span>Global Rankings</span>
-          </h2>
-        </div>
-        
-        <div className="overflow-hidden">
-          <table className="w-full">
-            <thead>
-              <tr className="bg-dark-800">
-                <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider w-16">
-                  Rank
-                </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider">
-                  Adventurer
-                </th>
-                <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider">
-                  Class
-                </th>
-                <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
-                  Primary
-                </th>
-                <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
-                  Secondary
-                </th>
-                <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
-                  Total
-                </th>
-              </tr>
-            </thead>
-            <tbody className="divide-y divide-dark-700">
-              {filteredAdventurers.map((adv, index) => (
-                <motion.tr 
-                  key={adv.name}
-                  className={`${index % 2 === 0 ? 'bg-dark-850' : ''} hover:bg-dark-750`}
-                  initial={{ opacity: 0, x: -20 }}
-                  animate={{ opacity: 1, x: 0 }}
-                  transition={{ duration: 0.3, delay: index * 0.05 }}
-                >
-                  <td className="px-4 py-4">
-                    <div className="flex items-center justify-center w-8 h-8 rounded-full bg-dark-700">
-                      {index === 0 ? (
-                        <Trophy size={16} className="text-yellow-400" />
-                      ) : index === 1 ? (
-                        <Medal size={16} className="text-gray-300" />
-                      ) : index === 2 ? (
-                        <Medal size={16} className="text-amber-600" />
-                      ) : (
-                        <span className="text-sm text-dark-400">{index + 1}</span>
-                      )}
-                    </div>
-                  </td>
-                  <td className="px-4 py-4">
-                    <Link 
-                      to={`/adventurer/${encodeURIComponent(adv.name)}`}
-                      className="flex items-center group"
-                    >
-                      <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-dark-600 mr-3">
-                        <img 
-                          src={adv.avatarUrl || `https://api.dicebear.com/6.x/avataaars/svg?seed=${encodeURIComponent(adv.name)}&backgroundColor=b6e3f4,c0aede,d1d4f9`}
-                          alt={adv.name}
-                          className="w-full h-full object-cover"
-                        />
-                      </div>
-                      <span className="font-medium group-hover:text-primary-400 transition-colors">
-                        {adv.name}
-                      </span>
-                    </Link>
-                  </td>
-                  <td className="px-4 py-4">
-                    <div className="flex items-center">
-                      <span className="text-xl mr-2">{CLASS_EMBLEMS[adv.role] || '🧩'}</span>
-                      <span className="text-sm">{adv.role}</span>
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 text-center">
-                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-900 text-primary-300">
-                      {adv.primary_area_score.toFixed(1)}
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 text-center">
-                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary-900 text-secondary-300">
-                      {adv.secondary_area_score.toFixed(1)}
-                    </div>
-                  </td>
-                  <td className="px-4 py-4 text-center font-medium">
-                    <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent-900 text-accent-300">
-                      {adv.primary_score.toFixed(1)}
-                    </div>
-                  </td>
-                </motion.tr>
-              ))}
-              
-              {filteredAdventurers.length === 0 && (
-                <tr>
-                  <td colSpan={6} className="px-4 py-8 text-center text-dark-400">
-                    <Trophy size={32} className="mx-auto mb-4 text-dark-500" />
-                    <p className="font-medieval text-lg mb-1">No Adventurers Found</p>
-                    <p className="text-sm">Adjust your search or filters to find adventurers.</p>
-                  </td>
+      <ErrorBoundary>
+        <motion.div 
+          className="card"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.4 }}
+        >
+          <div className="card-header">
+            <h2 className="font-medieval flex items-center">
+              <Trophy size={20} className="mr-2 text-yellow-400" />
+              <span>Global Rankings</span>
+            </h2>
+          </div>
+          
+          <div className="overflow-hidden">
+            <table className="w-full">
+              <thead>
+                <tr className="bg-dark-800">
+                  <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider w-16">
+                    Rank
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider">
+                    Adventurer
+                  </th>
+                  <th className="px-4 py-3 text-left text-xs font-medium text-dark-400 uppercase tracking-wider">
+                    Class
+                  </th>
+                  <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
+                    Primary
+                  </th>
+                  <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
+                    Secondary
+                  </th>
+                  <th className="px-4 py-3 text-center text-xs font-medium text-dark-400 uppercase tracking-wider">
+                    Total
+                  </th>
                 </tr>
-              )}
-            </tbody>
-          </table>
-        </div>
-      </motion.div>
+              </thead>
+              <tbody className="divide-y divide-dark-700">
+                {filteredAdventurers.map((adv, index) => (
+                  <motion.tr 
+                    key={adv.id}
+                    className={`${index % 2 === 0 ? 'bg-dark-850' : ''} hover:bg-dark-750`}
+                    initial={{ opacity: 0, x: -20 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.3, delay: index * 0.05 }}
+                  >
+                    <td className="px-4 py-4">
+                      <div className="flex items-center justify-center w-8 h-8 rounded-full bg-dark-700">
+                        {index === 0 ? (
+                          <Trophy size={16} className="text-yellow-400" />
+                        ) : index === 1 ? (
+                          <Medal size={16} className="text-gray-300" />
+                        ) : index === 2 ? (
+                          <Medal size={16} className="text-amber-600" />
+                        ) : (
+                          <span className="text-sm text-dark-400">{index + 1}</span>
+                        )}
+                      </div>
+                    </td>
+                    <td className="px-4 py-4">
+                      <Link 
+                        to={`/adventurer/${encodeURIComponent(adv.id)}`}
+                        className="flex items-center group"
+                      >
+                        <div className="w-10 h-10 rounded-full overflow-hidden border-2 border-dark-600 mr-3">
+                          <img 
+                            src={adv.avatarUrl || createAvatarUrl(adv.name)}
+                            alt={adv.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.target.onerror = null;
+                              e.target.src = createAvatarUrl(adv.name);
+                            }}
+                          />
+                        </div>
+                        <span className="font-medium group-hover:text-primary-400 transition-colors">
+                          {adv.name}
+                        </span>
+                      </Link>
+                    </td>
+                    <td className="px-4 py-4">
+                      <div className="flex items-center">
+                        <span className="text-xl mr-2">{CLASS_EMBLEMS[adv.role] || '🧩'}</span>
+                        <span className="text-sm">{adv.role}</span>
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 text-center">
+                      <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-primary-900 text-primary-300">
+                        {adv.primary_area_score.toFixed(1)}
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 text-center">
+                      <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-secondary-900 text-secondary-300">
+                        {adv.secondary_area_score.toFixed(1)}
+                      </div>
+                    </td>
+                    <td className="px-4 py-4 text-center font-medium">
+                      <div className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-accent-900 text-accent-300">
+                        {adv.primary_score.toFixed(1)}
+                      </div>
+                    </td>
+                  </motion.tr>
+                ))}
+                
+                {filteredAdventurers.length === 0 && (
+                  <tr>
+                    <td colSpan={6} className="px-4 py-8 text-center text-dark-400">
+                      <Trophy size={32} className="mx-auto mb-4 text-dark-500" />
+                      <p className="font-medieval text-lg mb-1">No Adventurers Found</p>
+                      <p className="text-sm">Adjust your search or filters to find adventurers.</p>
+                    </td>
+                  </tr>
+                )}
+              </tbody>
+            </table>
+          </div>
+        </motion.div>
+      </ErrorBoundary>
       
       <motion.div
         className="mt-12 text-center"

@@ -2,32 +2,32 @@ export const SKILL_LEVELS = {
   0: {
     title: "Never used it",
     description: "Has never encountered this skill in practice",
-    color: "#FF0000"
+    color: "#E53E3E" // Red for zero
   },
   1: {
     title: "Exposure",
     description: "Has basic familiarity but needs guidance",
-    color: "#FF4500"
+    color: "#F56565" // Lighter red for 1
   },
   2: {
     title: "Competent",
     description: "Can work independently with occasional assistance",
-    color: "#FFA500"
+    color: "#ED8936" // Orange for 2
   },
   3: {
     title: "Proficient",
     description: "Works autonomously and can teach others",
-    color: "#FFFF00"
+    color: "#68D391" // Light green for 3
   },
   4: {
     title: "Expert",
     description: "Deep understanding and can solve complex problems",
-    color: "#ADFF2F"
+    color: "#48BB78" // Brighter green for 4
   },
   5: {
     title: "Guru",
     description: "Master of the craft and recognized authority",
-    color: "#008000"
+    color: "#2F855A" // Full green for 5
   }
 };
 
