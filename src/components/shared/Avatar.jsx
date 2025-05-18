@@ -3,6 +3,7 @@ import { createAvatarUrl } from '../../utils/avatarHelpers';
 
 /**
  * Reusable avatar component with configurable size
+ * Displays a blank anonymous outline until an image is assigned
  */
 const Avatar = ({ name, avatarUrl, size = 'md', className = '', withBadge = false }) => {
   const sizeClasses = {
@@ -17,8 +18,11 @@ const Avatar = ({ name, avatarUrl, size = 'md', className = '', withBadge = fals
     lg: 'border-4'
   };
   
-  // Use custom avatarUrl if provided, otherwise generate one
-  const imageUrl = avatarUrl || createAvatarUrl(name);
+  // Use a blank anonymous outline as the default avatar
+  const defaultAvatarUrl = "https://api.dicebear.com/6.x/initials/svg?seed=?&backgroundColor=b6e3f4";
+  
+  // Only use custom avatarUrl if explicitly provided
+  const imageUrl = avatarUrl || defaultAvatarUrl;
   
   return (
     <div className="relative">

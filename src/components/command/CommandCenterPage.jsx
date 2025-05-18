@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, X, Check, Users, Edit, RefreshCw, Loader, Grid, Database, UserPlus } from 'lucide-react';
+import { Shield, X, Check, Users, Edit, RefreshCw, Loader, Grid, Database, UserPlus, Save } from 'lucide-react';
 import { motion } from 'framer-motion';
 import ActivityLog, { logActivity } from './ActivityLog';
 import LoreEditor from './LoreEditor';
@@ -7,6 +7,7 @@ import SkillEditor from './SkillEditor';
 import ProfileImageEditor from './ProfileImageEditor';
 import MatrixEditor from './MatrixEditor';
 import PeopleManager from './PeopleManager';
+import BackupRestoreManager from './BackupRestoreManager';
 import { ADMIN_PASSWORD } from '../../utils/constants';
 import { useAdventurers } from '../../contexts/AdventurerContext';
 import ErrorBoundary from '../shared/ErrorBoundary';
@@ -211,7 +212,7 @@ const CommandCenterPage = () => {
           and view guild activity logs.
         </p>
         
-        <div className="mt-4 flex space-x-4 justify-center">
+        <div className="mt-4 flex flex-wrap gap-4 justify-center">
           <button
             onClick={() => setIsMatrixEditorOpen(true)}
             className="btn btn-primary"
@@ -226,6 +227,14 @@ const CommandCenterPage = () => {
           >
             <UserPlus size={16} className="mr-2" />
             <span>Manage People</span>
+          </button>
+          
+          <button
+            onClick={() => window.location.href = '#backup-restore'}
+            className="btn btn-warning"
+          >
+            <Save size={16} className="mr-2" />
+            <span>Backup & Restore</span>
           </button>
         </div>
       </motion.div>
@@ -411,13 +420,23 @@ const CommandCenterPage = () => {
               </motion.div>
             )}
             
-            <motion.div 
+            <motion.div
               className="mt-8"
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: 0.4 }}
             >
               <ActivityLog />
+            </motion.div>
+            
+            <motion.div
+              id="backup-restore"
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.5 }}
+            >
+              <BackupRestoreManager />
             </motion.div>
           </div>
         </div>

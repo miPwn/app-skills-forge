@@ -35,29 +35,30 @@ const SkillEditor = ({ adventurer, onSave }) => {
     const sourceCategory = source.droppableId;
     const destCategory = destination.droppableId;
     
-    // If dropped in the same category, do nothing
-    if (sourceCategory === destCategory) {
-      return;
-    }
-    
     // Get the skill name from the draggableId
     const skillName = result.draggableId;
-    
-    // Get the skill data from the source category
-    const skillData = editedSkills[sourceCategory][skillName];
     
     // Create a new skills object
     const newSkills = {...editedSkills};
     
-    // Add the skill to the destination category
-    newSkills[destCategory] = {
-      ...newSkills[destCategory],
-      [skillName]: skillData
-    };
-    
-    // Remove the skill from the source category
-    const { [skillName]: removed, ...remainingSkills } = newSkills[sourceCategory];
-    newSkills[sourceCategory] = remainingSkills;
+    // If dropped in the same category, do nothing
+    if (sourceCategory === destCategory) {
+      return;
+    } else {
+      // Moving between categories
+      // Get the skill data from the source category
+      const skillData = editedSkills[sourceCategory][skillName];
+      
+      // Add the skill to the destination category
+      newSkills[destCategory] = {
+        ...newSkills[destCategory],
+        [skillName]: skillData
+      };
+      
+      // Remove the skill from the source category
+      const { [skillName]: removed, ...remainingSkills } = newSkills[sourceCategory];
+      newSkills[sourceCategory] = remainingSkills;
+    }
     
     // Update the state
     setEditedSkills(newSkills);
@@ -224,12 +225,14 @@ const SkillEditor = ({ adventurer, onSave }) => {
                                   value={skill.score}
                                   onChange={(e) => handleSkillChange(category, skillName, parseInt(e.target.value))}
                                   className="w-full h-2 appearance-none rounded bg-dark-600 focus:outline-none focus:ring-2 focus:ring-green-500"
-                                  style={{
-                                    backgroundImage: `linear-gradient(to right, ${SKILL_LEVELS[0].color}, ${SKILL_LEVELS[1].color}, ${SKILL_LEVELS[2].color}, ${SKILL_LEVELS[3].color}, ${SKILL_LEVELS[4].color}, ${SKILL_LEVELS[5].color})`,
-                                    backgroundSize: `100% 100%`,
-                                    backgroundRepeat: 'no-repeat'
-                                  }}
                                 />
+                                <div
+                                  className="absolute top-1 left-0 h-2 rounded"
+                                  style={{
+                                    width: `${(skill.score / 5) * 100}%`,
+                                    backgroundColor: skill.color
+                                  }}
+                                ></div>
                                 
                                 <div className="flex justify-between text-xs text-dark-400 mt-1">
                                   <span>{SKILL_LEVELS[skill.score]?.title || "Unknown"}</span>

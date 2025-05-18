@@ -23,25 +23,36 @@ const AdventurerCard = ({ adventurerId }) => {
   // Use the provided adventurerId or the one from URL params
   const idToUse = adventurerId || id;
   
-  // Find the adventurer by ID or name
-  const adventurerById = findAdventurerById(idToUse);
-  const adventurerByName = findAdventurer(idToUse);
-  const adventurer = adventurerById || adventurerByName;
+  // Try to find the adventurer by ID first
+  let adventurer = findAdventurerById(idToUse);
+  
+  // If not found by ID, try to find by name or partial ID match
+  if (!adventurer) {
+    // Try by name
+    const adventurerByName = findAdventurer(idToUse);
+    
+    if (adventurerByName) {
+      adventurer = adventurerByName;
+      console.log('Found by name:', adventurerByName);
+    } else {
+      // Try by partial ID match
+      const foundByPartialId = adventurers.find(adv =>
+        (adv.id && idToUse && adv.id.includes(idToUse)) ||
+        (adv.id && idToUse && idToUse.includes(adv.id))
+      );
+      
+      if (foundByPartialId) {
+        adventurer = foundByPartialId;
+        console.log('Found by partial ID match:', foundByPartialId);
+      }
+    }
+  }
   
   // Debug
   console.log('ID from params:', id);
-  console.log('Adventurer by ID:', adventurerById);
-  console.log('Adventurer by name:', adventurerByName);
+  console.log('ID to use:', idToUse);
   console.log('Selected adventurer:', adventurer);
   console.log('All adventurers:', adventurers);
-  
-  // If found by name but not ID, redirect to ID-based URL
-  useEffect(() => {
-    if (!adventurerById && adventurerByName) {
-      console.log('Redirecting to ID-based URL:', adventurerByName.id);
-      navigate(`/adventurer/${adventurerByName.id}`, { replace: true });
-    }
-  }, [adventurerById, adventurerByName, navigate]);
   
   if (loading) {
     return (

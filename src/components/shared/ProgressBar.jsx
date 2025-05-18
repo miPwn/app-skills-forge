@@ -75,7 +75,7 @@ const ProgressBar = React.memo(({
         {/* Value label inside the progress bar for better visibility */}
         {showValue && (
           <div className="absolute inset-0 flex items-center justify-center">
-            <span className={`text-xs font-medium ${textColorClass}`}>
+            <span className={`text-sm font-bold ${textColorClass}`} style={{ textShadow: '0px 0px 3px rgba(0,0,0,0.7)' }}>
               {value.toFixed(1)}
             </span>
           </div>
