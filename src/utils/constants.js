@@ -63,4 +63,4 @@ export const LORE_PROMPTS = [
   "What technological dragon would you like to slay next?"
 ];
 
-export const ADMIN_PASSWORD = "rpgteamplayers";
+export const ADMIN_PASSWORD = import.meta.env.VITE_ADMIN_PASSWORD || "";

@@ -1,6 +1,8 @@
 
 # GuildForge - RPG-Themed Team Skill Matrix
 
+Note: This repository ships with privacy-safe sample data. No real personal data is included.
+
 GuildForge is a **React** application for managing team skills, designed with a **RPG** twist to make tracking and developing team capabilities more engaging. The app features **leaderboards**, **adventurer profiles**, **lore editors**, and a **command center** for team leads to manage technologies and skills.
 
 ---
@@ -100,6 +102,12 @@ src/
 
 ##  Deployment
 
+Security and quality gates run in CI:
+- Linting (eslint)
+- Build (vite)
+- Vulnerability scan (npm audit, Trivy)
+- Release on tag push (v1.1.0+)
+
 - The app is pre-configured for deployment to **Netlify** or **Vercel**.
 - Make sure to update any API keys or environment variables before deploying.
 
@@ -121,6 +129,15 @@ Contributions are welcome! Please open an **issue** or **pull request** for any 
 
 ---
 
+##  Environment Variables
+
+Create a local .env file based on .env.example and set:
+- VITE_ADMIN_PASSWORD
+
+The .env file is ignored by git.
+
+---
+
 ##  License
 
-This project is licensed under the **MIT License**.
+This project is licensed under the **GNU Affero General Public License v3.0 (AGPL-3.0)**. See LICENSE for details.

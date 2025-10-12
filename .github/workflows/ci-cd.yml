@@ -1,0 +1,261 @@
+name: CI/CD Pipeline with Security
+
+on:
+  push:
+    branches: [ main, develop ]
+    tags: [ 'v*' ]
+  pull_request:
+    branches: [ main ]
+
+env:
+  NODE_VERSION: '18'
+
+jobs:
+  # Job 1: Security and Quality Checks
+  security-and-quality:
+    name: 🔒 Security & Quality
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+      with:
+        fetch-depth: 0
+
+    - name: 🎯 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    - name: 🧹 Lint code
+      run: npm run lint
+
+    - name: 🔍 Run tests with coverage
+      run: npm test -- --coverage --watchAll=false
+
+    - name: 📊 Upload coverage to Codecov
+      uses: codecov/codecov-action@v3
+      with:
+        fail_ci_if_error: false
+
+    - name: 🔐 Secret Detection
+      uses: trufflesecurity/trufflehog@main
+      with:
+        path: ./
+        base: main
+        head: HEAD
+        extra_args: --debug --only-verified
+
+    - name: 🛡️ Run npm audit
+      run: |
+        npm audit --audit-level=moderate || exit_code=$?
+        if [ ${exit_code:-0} -eq 0 ]; then
+          echo "✅ No moderate+ vulnerabilities found"
+        else
+          echo "❌ Vulnerabilities found. Creating fix PR if needed..."
+          echo "VULNERABILITIES_FOUND=true" >> $GITHUB_ENV
+        fi
+
+    - name: 🔧 Attempt automatic vulnerability fixes
+      if: env.VULNERABILITIES_FOUND == 'true'
+      id: audit-fix
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        
+        # Try to fix vulnerabilities automatically
+        npm audit fix --audit-level=moderate || true
+        
+        # Check if fixes were applied
+        if [[ -n $(git status --porcelain) ]]; then
+          echo "FIXES_AVAILABLE=true" >> $GITHUB_ENV
+          git add package*.json
+          git commit -m "fix: apply automated security fixes from npm audit
+          
+          - Fixed vulnerabilities found by npm audit
+          - Applied automatic fixes for moderate+ severity issues
+          - This is an automated commit from CI/CD pipeline"
+          
+          echo "✅ Security fixes applied automatically"
+        else
+          echo "ℹ️  No automatic fixes available"
+        fi
+
+    - name: 🏗️ Build application
+      run: npm run build
+
+    - name: 📋 Container Security Scan with Trivy
+      uses: aquasecurity/trivy-action@master
+      with:
+        scan-type: 'fs'
+        scan-ref: '.'
+        format: 'sarif'
+        output: 'trivy-results.sarif'
+        severity: 'CRITICAL,HIGH,MEDIUM'
+        exit-code: '1'
+
+    - name: 📤 Upload Trivy scan results to GitHub Security tab
+      uses: github/codeql-action/upload-sarif@v2
+      if: always()
+      with:
+        sarif_file: 'trivy-results.sarif'
+
+    # Create PR with security fixes if needed
+    - name: 🔧 Create Pull Request with Security Fixes
+      if: env.FIXES_AVAILABLE == 'true' && github.ref == 'refs/heads/main'
+      uses: peter-evans/create-pull-request@v5
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        commit-message: 'fix: apply automated security fixes'
+        title: '🔒 Automated Security Fixes'
+        body: |
+          ## 🔒 Automated Security Vulnerability Fixes
+          
+          This PR contains automated fixes for security vulnerabilities found by npm audit.
+          
+          ### Changes Made
+          - Applied `npm audit fix` for moderate+ severity vulnerabilities
+          - Updated package-lock.json with secure dependency versions
+          
+          ### Verification
+          - [ ] Review the dependency changes
+          - [ ] Ensure application still functions correctly
+          - [ ] Verify no breaking changes introduced
+          
+          **Generated automatically by CI/CD pipeline**
+        branch: security/automated-fixes
+        delete-branch: true
+
+    # Store build artifacts
+    - name: 📦 Upload build artifacts
+      uses: actions/upload-artifact@v3
+      with:
+        name: build-artifacts
+        path: dist/
+        retention-days: 30
+
+  # Job 2: Release (only on version tags)
+  release:
+    name: 🚀 Release
+    needs: security-and-quality
+    runs-on: ubuntu-latest
+    if: startsWith(github.ref, 'refs/tags/v')
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🎯 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    - name: 🏗️ Build for production
+      run: npm run build
+
+    - name: 📝 Extract version from tag
+      id: version
+      run: |
+        VERSION=${GITHUB_REF#refs/tags/v}
+        echo "VERSION=$VERSION" >> $GITHUB_ENV
+        echo "Release version: $VERSION"
+
+    - name: 🎉 Create GitHub Release
+      uses: actions/create-release@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        tag_name: ${{ github.ref }}
+        release_name: GuildForge v${{ env.VERSION }}
+        body: |
+          ## 🎯 GuildForge v${{ env.VERSION }}
+          
+          ### 🔒 Security
+          - All security scans passed
+          - Dependencies audited and updated
+          - No critical vulnerabilities detected
+          
+          ### 📦 What's Included
+          - Production-ready build artifacts
+          - Comprehensive documentation
+          - Security-hardened configuration
+          
+          ### 🚀 Deployment
+          Download the artifacts and deploy to your preferred hosting platform.
+          
+          See [CHANGELOG.md](./CHANGELOG.md) for detailed release notes.
+          
+          ---
+          **Full Changelog**: [View Changes](https://github.com/${{ github.repository }}/compare/v1.0.0...v${{ env.VERSION }})
+        draft: false
+        prerelease: false
+
+    - name: 📦 Upload Release Assets
+      uses: actions/upload-release-asset@v1
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      with:
+        upload_url: ${{ steps.create_release.outputs.upload_url }}
+        asset_path: ./dist
+        asset_name: guildforge-v${{ env.VERSION }}-build.zip
+        asset_content_type: application/zip
+
+  # Job 3: Security Monitoring (daily)
+  security-monitoring:
+    name: 🔍 Daily Security Monitoring
+    runs-on: ubuntu-latest
+    if: github.event_name == 'schedule'
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 🎯 Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: 'npm'
+
+    - name: 📦 Install dependencies
+      run: npm ci
+
+    - name: 🔒 Comprehensive Security Audit
+      run: |
+        echo "🔍 Running comprehensive security audit..."
+        npm audit --audit-level=low
+        
+        echo "🔍 Checking for outdated packages..."
+        npm outdated || true
+        
+        echo "✅ Security monitoring complete"
+
+    - name: 📊 Generate Security Report
+      run: |
+        echo "# Daily Security Report - $(date)" > security-report.md
+        echo "" >> security-report.md
+        echo "## npm audit results:" >> security-report.md
+        npm audit --audit-level=low --json | jq '.' >> security-report.md || true
+        
+        echo "" >> security-report.md
+        echo "## Outdated packages:" >> security-report.md
+        npm outdated --json | jq '.' >> security-report.md || true
+
+    - name: 📤 Upload Security Report
+      uses: actions/upload-artifact@v3
+      with:
+        name: daily-security-report
+        path: security-report.md
+        retention-days: 7
+
+# Schedule daily security monitoring
+on:
+  schedule:
+    - cron: '0 6 * * *'  # Daily at 6 AM UTC

@@ -19,7 +19,7 @@ import ErrorBoundary from '../shared/ErrorBoundary';
  */
 const CommandCenterPage = () => {
   const { adventurers, updateAdventurer, resetToInitial, loading, getSkillMatrix, updateSkillMatrix } = useAdventurers();
-  const [isAuthenticated, setIsAuthenticated] = useState(true); // Temporarily set to true to disable password login
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [password, setPassword] = useState('');
   const [authError, setAuthError] = useState('');
   const [selectedAdventurer, setSelectedAdventurer] = useState(null);
@@ -33,9 +33,7 @@ const CommandCenterPage = () => {
   const handleLogin = (e) => {
     e.preventDefault();
     
-    // NOTE: Password check is temporarily disabled - authentication is set to true by default
-    // If you need to re-enable password protection, change the initial state back to false
-    if (password === ADMIN_PASSWORD) {
+    if (password && ADMIN_PASSWORD && password === ADMIN_PASSWORD) {
       setIsAuthenticated(true);
       setAuthError('');
       logActivity('Logged into command center');
