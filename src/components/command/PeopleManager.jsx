@@ -1,5 +1,5 @@
-import React, { useState, useEffect } from 'react';
-import { UserPlus, UserMinus, Upload, AlertCircle, Check, X } from 'lucide-react';
+import React, { useState, useEffect, useRef } from 'react';
+import { UserPlus, UserMinus, Upload, Download, AlertCircle, Check, X } from 'lucide-react';
 import { motion } from 'framer-motion';
 import { useAdventurers } from '../../contexts/AdventurerContext';
 import { logActivity } from './ActivityLog';
@@ -21,7 +21,9 @@ const PeopleManager = () => {
   const [showRemoveConfirm, setShowRemoveConfirm] = useState(false);
   const [personToRemove, setPersonToRemove] = useState(null);
   const [importStatus, setImportStatus] = useState(null);
+  const [exportStatus, setExportStatus] = useState(null);
   const [error, setError] = useState(null);
+  const fileInputRef = useRef(null);
 
   // Available roles
   const roles = ['Front End', 'Back End', 'Full Stack', 'DevOps', 'QA'];
@@ -134,37 +136,61 @@ const PeopleManager = () => {
     }
   };
 
-  // Import people from people.json
-  const handleImportPeople = async () => {
+  // Helper function to read file content
+  const readFileAsText = (file) => {
+    return new Promise((resolve, reject) => {
+      const reader = new FileReader();
+      reader.onload = (event) => resolve(event.target.result);
+      reader.onerror = (error) => reject(error);
+      reader.readAsText(file);
+    });
+  };
+
+  // Helper function to get color based on score
+  const getColorForScore = (score) => {
+    switch(score) {
+      case 0: return '#FF0000'; // Red
+      case 1: return '#FF4500'; // OrangeRed
+      case 2: return '#FFA500'; // Orange
+      case 3: return '#FFFF00'; // Yellow
+      case 4: return '#ADFF2F'; // GreenYellow
+      case 5: return '#00FF00'; // Green
+      default: return '#FF0000'; // Default red
+    }
+  };
+
+  // Handle file selection and import
+  const handleFileChange = async (e) => {
+    const file = e.target.files[0];
+    if (!file) return;
+    
     try {
       setImportStatus('loading');
+      setError(null);
       
-      // Use a hardcoded array of people instead of fetching from a file
-      const peopleData = [
-        {
-          "name": "John Doe",
-          "role": "Full Stack",
-          "skills": {}
-        },
-        {
-          "name": "Jane Smith",
-          "role": "Front End",
-          "skills": {}
-        },
-        {
-          "name": "Bob Johnson",
-          "role": "Back End",
-          "skills": {}
-        }
-      ];
+      // Read the file content
+      const fileContent = await readFileAsText(file);
+      const peopleData = JSON.parse(fileContent);
+      
+      if (!Array.isArray(peopleData)) {
+        throw new Error('Invalid file format. Expected an array of people.');
+      }
       
       // Remove all current people except Guild and Quest Board
       const filteredAdventurers = adventurers.filter(
         adv => adv.role === 'Guild' || adv.role === 'Quest Board'
       );
       
-      // Add each person from the JSON file
+      // Process each person from the imported data
+      const processedPeople = [];
+      
       for (const person of peopleData) {
+        // Ensure the person has the required fields
+        if (!person.name || !person.role || !person.skills) {
+          console.warn(`Skipping person with missing required fields: ${JSON.stringify(person)}`);
+          continue;
+        }
+        
         // Check if person already exists
         const exists = filteredAdventurers.some(adv =>
           adv.name.toLowerCase() === person.name.toLowerCase()
@@ -201,7 +227,7 @@ const PeopleManager = () => {
                 const score = skillData.score || 0;
                 structuredSkills[foundArea][skillName] = {
                   score: score,
-                  color: score === 0 ? '#FF0000' : getColorForScore(score)
+                  color: getColorForScore(score)
                 };
               }
             });
@@ -210,32 +236,30 @@ const PeopleManager = () => {
             structuredSkills = person.skills || {};
           }
           
-          addAdventurer({
+          const newPerson = {
+            id: Date.now() + Math.random().toString(36).substr(2, 9), // Generate a unique ID
             name: person.name,
             role: person.role,
             skills: structuredSkills,
-            lore: '',
-            primary_area_score: 0,
-            secondary_area_score: 0,
-            primary_score: 0
-          });
+            lore: person.lore || '',
+            primary_area_score: person.primary_area_score || 0,
+            secondary_area_score: person.secondary_area_score || 0,
+            primary_score: person.primary_score || 0,
+            avatarUrl: person.avatarUrl || ''
+          };
+          
+          processedPeople.push(newPerson);
+          addAdventurer(newPerson);
         }
       }
       
-      logActivity('Imported people from people.json');
+      logActivity(`Imported ${processedPeople.length} people from uploaded file`);
       
-      // Helper function to get color based on score
-      function getColorForScore(score) {
-        switch(score) {
-          case 0: return '#FF0000'; // Red
-          case 1: return '#FF4500'; // OrangeRed
-          case 2: return '#FFA500'; // Orange
-          case 3: return '#FFFF00'; // Yellow
-          case 4: return '#ADFF2F'; // GreenYellow
-          case 5: return '#00FF00'; // Green
-          default: return '#FF0000'; // Default red
-        }
+      // Reset file input
+      if (fileInputRef.current) {
+        fileInputRef.current.value = '';
       }
+      
       setImportStatus('success');
       
       // Reset status after 3 seconds
@@ -250,6 +274,81 @@ const PeopleManager = () => {
       // Reset status after 3 seconds
       setTimeout(() => {
         setImportStatus(null);
+        setError(null);
+      }, 3000);
+    }
+  };
+  
+  // Trigger file input click
+  const handleImportPeople = () => {
+    if (fileInputRef.current) {
+      fileInputRef.current.click();
+    }
+  };
+  
+  // Export people to a JSON file
+  const handleExportPeople = async () => {
+    try {
+      setExportStatus('loading');
+      setError(null);
+      
+      // Filter out Guild and Quest Board
+      const filteredAdventurers = adventurers.filter(
+        adv => adv.role !== 'Guild' && adv.role !== 'Quest Board'
+      );
+      
+      // Convert hierarchical skills structure to flat structure
+      const exportData = filteredAdventurers.map(person => {
+        // Create a flat skills object
+        const flatSkills = {};
+        
+        // Process each skill area
+        Object.entries(person.skills).forEach(([areaName, areaSkills]) => {
+          // Add each skill to the flat structure
+          Object.entries(areaSkills).forEach(([skillName, skillData]) => {
+            flatSkills[skillName] = {
+              score: skillData.score || 0
+            };
+          });
+        });
+        
+        // Return the person with flat skills structure
+        return {
+          name: person.name,
+          role: person.role,
+          skills: flatSkills
+        };
+      });
+      
+      // Create a Blob with the JSON data
+      const jsonData = JSON.stringify(exportData, null, 2);
+      const blob = new Blob([jsonData], { type: 'application/json' });
+      
+      // Create a download link and trigger the download
+      const url = URL.createObjectURL(blob);
+      const link = document.createElement('a');
+      link.href = url;
+      link.download = 'people.json';
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+      URL.revokeObjectURL(url);
+      
+      logActivity('Exported people to JSON file');
+      setExportStatus('success');
+      
+      // Reset status after 3 seconds
+      setTimeout(() => {
+        setExportStatus(null);
+      }, 3000);
+    } catch (error) {
+      console.error('Error exporting people:', error);
+      setExportStatus('error');
+      setError(error.message);
+      
+      // Reset status after 3 seconds
+      setTimeout(() => {
+        setExportStatus(null);
         setError(null);
       }, 3000);
     }
@@ -273,11 +372,20 @@ const PeopleManager = () => {
             <UserPlus size={16} className="mr-1" />
             <span>Add Person</span>
           </button>
+          
+          <input
+            type="file"
+            ref={fileInputRef}
+            onChange={handleFileChange}
+            accept=".json"
+            className="hidden"
+          />
+          
           <button
             onClick={handleImportPeople}
             className={`btn ${importStatus === 'loading' ? 'btn-dark' : 'btn-success'} btn-sm`}
             disabled={importStatus === 'loading'}
-            title="Import people from people.json"
+            title="Import people from JSON file"
           >
             {importStatus === 'loading' ? (
               <span className="animate-spin mr-1">⟳</span>
@@ -286,29 +394,65 @@ const PeopleManager = () => {
             )}
             <span>Import from JSON</span>
           </button>
+          
+          <button
+            onClick={handleExportPeople}
+            className={`btn ${exportStatus === 'loading' ? 'btn-dark' : 'btn-primary'} btn-sm`}
+            disabled={exportStatus === 'loading'}
+            title="Export people to JSON file"
+          >
+            {exportStatus === 'loading' ? (
+              <span className="animate-spin mr-1">⟳</span>
+            ) : (
+              <Download size={16} className="mr-1" />
+            )}
+            <span>Export to JSON</span>
+          </button>
         </div>
       </div>
 
       {/* Status messages */}
       {importStatus === 'success' && (
-        <motion.div 
+        <motion.div
           className="m-4 p-3 bg-success-800 bg-opacity-20 border border-success-700 rounded-md text-success-400 text-sm flex items-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
           <Check size={16} className="mr-2" />
-          <span>Successfully imported people from people.json</span>
+          <span>Successfully imported people from JSON file</span>
         </motion.div>
       )}
 
       {importStatus === 'error' && (
-        <motion.div 
+        <motion.div
           className="m-4 p-3 bg-danger-800 bg-opacity-20 border border-danger-700 rounded-md text-danger-400 text-sm flex items-center"
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
         >
           <AlertCircle size={16} className="mr-2" />
-          <span>{error || 'Error importing people from people.json'}</span>
+          <span>{error || 'Error importing people from JSON file'}</span>
+        </motion.div>
+      )}
+      
+      {exportStatus === 'success' && (
+        <motion.div
+          className="m-4 p-3 bg-success-800 bg-opacity-20 border border-success-700 rounded-md text-success-400 text-sm flex items-center"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <Check size={16} className="mr-2" />
+          <span>Successfully exported people to JSON file</span>
+        </motion.div>
+      )}
+
+      {exportStatus === 'error' && (
+        <motion.div
+          className="m-4 p-3 bg-danger-800 bg-opacity-20 border border-danger-700 rounded-md text-danger-400 text-sm flex items-center"
+          initial={{ opacity: 0, y: -10 }}
+          animate={{ opacity: 1, y: 0 }}
+        >
+          <AlertCircle size={16} className="mr-2" />
+          <span>{error || 'Error exporting people to JSON file'}</span>
         </motion.div>
       )}
 

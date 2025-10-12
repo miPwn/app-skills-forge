@@ -359,6 +359,7 @@ export const AdventurerProvider = ({ children }) => {
   // Context value
   const value = {
     adventurers: processedAdventurers,
+    setAdventurers, // Expose setAdventurers for direct manipulation
     loading,
     error,
     addAdventurer,

@@ -8,6 +8,8 @@ import ProfileImageEditor from './ProfileImageEditor';
 import MatrixEditor from './MatrixEditor';
 import PeopleManager from './PeopleManager';
 import BackupRestoreManager from './BackupRestoreManager';
+import PeopleImporter from './PeopleImporter';
+import PeopleExporter from './PeopleExporter';
 import { ADMIN_PASSWORD } from '../../utils/constants';
 import { useAdventurers } from '../../contexts/AdventurerContext';
 import ErrorBoundary from '../shared/ErrorBoundary';
@@ -437,6 +439,26 @@ const CommandCenterPage = () => {
               transition={{ duration: 0.4, delay: 0.5 }}
             >
               <BackupRestoreManager />
+            </motion.div>
+            
+            <motion.div
+              id="people-importer"
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.6 }}
+            >
+              <PeopleImporter />
+            </motion.div>
+            
+            <motion.div
+              id="people-exporter"
+              className="mt-8"
+              initial={{ opacity: 0, y: 20 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.4, delay: 0.7 }}
+            >
+              <PeopleExporter />
             </motion.div>
           </div>
         </div>
