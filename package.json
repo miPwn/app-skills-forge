@@ -11,7 +11,7 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^2.0.1",
-    "chart.js": "^4.4.1",
+    "chart.js": "^4.5.1",
     "extract-zip": "^2.0.1",
     "framer-motion": "^10.18.0",
     "lucide-react": "^0.344.0",
