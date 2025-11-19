@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@reduxjs/toolkit": "^2.0.1",
+    "@reduxjs/toolkit": "^2.9.2",
     "chart.js": "^4.4.1",
     "extract-zip": "^2.0.1",
     "framer-motion": "^10.18.0",
